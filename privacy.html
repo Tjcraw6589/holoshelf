@@ -1,0 +1,50 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Holoshelf Privacy Policy</title><style>body{font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;max-width:760px;margin:40px auto;padding:0 20px;color:#121626;background:#fff}h1{font-size:28px}h2{margin-top:32px;font-size:20px}a{color:#2E6BFF}@media(prefers-color-scheme:dark){body{background:#0E1220;color:#F2F4FA}a{color:#6B93FF}}</style></head><body><h1>Holoshelf Privacy Policy</h1>
+<p>Effective date: 2026-10-28</p>
+<p>Holoshelf ("the app") is published by Tyjcr ("we", "us"). This policy explains what the app collects, why, and what you can do about it.</p>
+<h2>Using Holoshelf without an account</h2>
+<p>You can use Holoshelf without an account. Your collection and your settings then stay on your device only; we do not receive them. Searching the catalog, opening items and loading prices still go through our servers (see "Catalog activity"), without anything that identifies you. Price alerts, problem reports and photos of your copies need an account, because our servers keep them for you.</p>
+<h2>What we collect when you have an account</h2>
+<ul>
+<li><strong>Account</strong>: your email address, and how you signed in (an emailed one-time code, Sign in with Apple, or Google). No password is stored. With Sign in with Apple you may choose to hide your email; Apple then gives us a private relay address that forwards to you. With Apple or Google we receive only your email address and the provider's account id for Holoshelf, never your password or other account data.</li>
+<li><strong>Collection data</strong>: the items you add, their condition, quantity, purchase price and date, your own value estimates, notes, price alerts, a daily total of your collection's value, and your app settings (appearance, default category). This is stored so it syncs across your devices and so alerts can be checked on our servers. Each change carries the time you made it so that, when the same item was changed on two devices, the most recent change is kept.</li>
+<li><strong>Moving a collection into your account</strong>: if you used Holoshelf without an account and then sign in, we ask before adding the items from that device to your account. Nothing is uploaded unless you agree.</li>
+<li><strong>Photos you add (optional)</strong>: if you add a photo of your own copy of an item, it is resized and re-encoded on your phone first, which removes location and camera details, then stored in our Supabase storage under a link that is hard to guess. Only you see it in the app. Removing the photo, the entry or your account deletes it.</li>
+<li><strong>Problem reports</strong>: when you report a wrong price, picture or detail, we store the report (the item, what is wrong, your message and any value you suggest) with your user id so the app's owner can review it. Reports are never shown to other users. If you delete your account, reports you filed stay without your user id so corrections keep their history.</li>
+<li><strong>Devices and notifications</strong>: if you enable notifications, an Expo push token for each device you enable them on is stored with your account so alerts reach all of them. Signing out on a device removes that device's token.</li>
+<li><strong>Purchases</strong>: subscription status is handled by RevenueCat and the app store. RevenueCat links your subscription to your account id so Premium works on every device you sign in to; we receive your entitlement status, never your payment details.</li>
+</ul>
+<h2>Catalog activity (with or without an account)</h2>
+<p>Searches and barcode lookups are processed by our backend to find items. When an item is missing, the request (query, barcode, and your user id if you are signed in) is stored until it is resolved. Item views are counted per item per day to decide how often prices refresh; the count is not tied to you.</p>
+<h2>Advertising (free plan only)</h2>
+<p>Google AdMob shows a banner on the free plan. AdMob may use your device's advertising identifier under its own policy. On iOS you are asked for tracking permission; declining shows non-personalized ads. Premium removes ads entirely.</p>
+<p>We do not collect your contacts or location. On the scan screen the camera reads barcodes on your device and no frames leave your phone. A photo is uploaded only when you choose to add one to an item.</p>
+<h2>Where it lives</h2>
+<p>Your account and collection are stored in a Supabase project (hosted on cloud infrastructure in the United States) protected by row level security, so only your signed-in session can read or change your rows. A copy is also kept on each device you sign in to, so the app works offline; signing out removes the account's copy from that device. Catalog and price data are public and come from the sources listed in the app's About screen.</p>
+<h2>Third parties</h2>
+<ul>
+<li>Supabase (database, authentication, storage)</li>
+<li>Apple (Sign in with Apple, if you use it) and Google (Google sign-in, if you use it)</li>
+<li>RevenueCat (subscription management)</li>
+<li>Google AdMob (ads on the free plan)</li>
+<li>Expo push service (delivery of alert notifications)</li>
+<li>Apple App Store and Google Play (billing)</li>
+<li>Picture servers (Scryfall, TCGdex, and the Cover Art Archive run by MusicBrainz and the Internet Archive): item pictures load directly from them, so they see your device's IP address like any website you visit.</li>
+<li>eBay (live listings): when an item page shows "For sale on eBay", our server asks eBay for current listings using only the item's name and format, never anything about you. Listing pictures load from eBay's servers. Tapping a listing opens eBay, where eBay's privacy policy applies; links may carry an eBay Partner Network code, so we may earn a commission if you buy. We do not store eBay listings.</li>
+</ul>
+<p>Catalog and price data providers never receive your personal data; our servers query them. Pictures are the one exception above: your device downloads them directly.</p>
+<h2>Your choices</h2>
+<ul>
+<li><strong>Export your data</strong>: Settings &gt; Export my data (or Account &gt; Export my data) downloads everything we store for your account as a JSON file: account, profile, collection, alerts, settings, value history, problem reports, item requests and devices. Without an account it exports what is on the device. Premium members can also export the collection as CSV.</li>
+<li><strong>Delete your account</strong>: Account &gt; Delete account removes your account and all of its data from our servers immediately and permanently: profile, collection, photos, alerts, settings, value history, device tokens and item requests (problem reports stay without your user id, as above), and the customer record at RevenueCat. Subscriptions are billed by the app store and must be cancelled there. The copy on the device you delete from is removed too.</li>
+<li><strong>Sign out</strong>: removes the account's copy from that device and stops that device's notifications. Your data stays in your account.</li>
+<li><strong>Notifications</strong>: disable them in your device settings at any time.</li>
+<li><strong>Ads tracking</strong>: change the tracking permission in your device settings; Premium removes ads.</li>
+</ul>
+<h2>Retention</h2>
+<p>Account data is kept until you delete the account. When you delete a single entry or alert, a deletion marker (without the item's details beyond its ids) is kept for up to 90 days so your other devices learn about the deletion, then removed.</p>
+<h2>Children</h2>
+<p>Holoshelf is not directed at children under 13 and we do not knowingly collect their data.</p>
+<h2>Changes</h2>
+<p>We will update this page and the effective date when the policy changes. Continued use after a change means you accept it.</p>
+<h2>Contact</h2>
+<p><a href="mailto:tyjcraw@gmail.com">tyjcraw@gmail.com</a></p></body></html>
